@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <!-- Bootstrap css file-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- font awesome icons-->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!--Magnific Popup css file-->
+    <link rel="stylesheet" href="./vendor/Magnific-Popup/dist/magnific-popup.css">
+      <!-- ekko lightbox-->
+      <link rel="stylesheet" href="./css/ekko-lightbox.css">
+
+    <!-- custom css file note: it will overwrite what is in boostrap css so we placed below-->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--  Responsive css file  -->
+    <link rel="stylesheet" href="./css/responsive.css">
+  
+</head>
+
+<body>
+
+    <!--Start Header-->
+    <header class="header_area">
+        <div class="main-menu">
+          <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#"><img src=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <div class="mr-auto"></div>
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                    </li>
+                  
+                    <li class="nav-item">
+                        <a class="nav-link" href="#anchorProject">Projects</a>
+                      </li>
+                      <!--
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>
+                  -->
+         
+                  </ul>
+                
+                </div>
+              </nav>
+            </div>
+        </div>
+    </header>
+    <!--End Header-->
+    
+    <!--Modal-->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Contact Me</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Mobile Number:
+        <a href="#">+65 97735086</a></p>
+        <p>Personal Email: <a href="#">summer53012@gmail.com</a></p>
+        <p>School Email: <a href="#">e0318915@u.nus.edu</a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+     
+      </div>
+    </div>
+  </div>
+</div>
+    <!--End Modal-->
+    <!-- Start Main -->
+    <main class="site-main">
+        <!--Start Banner-->
+        <section class="site-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 site-title">
+                    <h3 class="title-text">Hey,</h3>
+                    <h1 class="title-text text-uppercase"> I am LiLi</h1>
+                    <h4 class="title-text text-uppercase"> Studying Information Systems in NUS</h4>
+                    <div class="site-buttons">
+                        <div class="d-flex flex-row flex-wrap">
+                            <button type="button" class="btn button primary-button mr-4 text-uppercase" data-toggle="modal" data-target="#exampleModal">Contact Me</button>
+                            <a href="./resume/Lin Li Li Resume(new1).pdf">
+                            <button type="button" class="btn button secondary-button text-uppercase">Get My CV</button></a>
+                        </div>
+                    </div>
+                    </div>  
+
+
+
+
+                    <div class="col-lg-6 col-md-12 banner-image">
+                      <!--
+                      <img src="./img/myPhoto.JPG" alt="bannerImg" class="imgfluid" style="width: 70%;height: 70%;"> -->
+                     
+                     <h2 class="text-uppercase pt-5">
+                        <span>About Myself</span>
+                    
+                    </h2>
+                     <div class="paragraph py-4 w-75">
+                        <p class="para">
+                          I am year 3 student pursuding Information System offered by NUS.
+                        </p>
+                        <p class="para">
+                           I have experience in many different types of projects during my school days. I am mainly interested in website and mobile development. I hope to gain more experience from the IT industry and able to apply what I have learned in the school.
+                        </p>
+                    </div>
+                   <!-- <button type="button" class="btn button primary-button text-uppercase">Download CV</button> -->
+                </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--End Banner-->
+
+        <!--About-->
+        <section class="about-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                   <!-- <div class="about-image">
+                        <img src="./img/about-us.png" alt="About us" class="img-fluid">
+                    </div>   --> 
+                    </div>
+                    <!--
+                    <div class="col-lg-6 col-md-12 about-title">
+                        <h2 class="text-uppercase pt-5">
+                            <span>Let me</span>
+                            <span>Introduce</span>
+                            <span>Myself</span>
+                        </h2>
+                        <div class="paragraph py-4 w-75">
+                            <p class="para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae commodi aspernatur excepturi possimus molestias quibusdam ut ea totam iusto accusamus!
+                            </p>
+                            <p class="para">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil eveniet sed quo ex, modi obcaecati hic molestiae rem. Vel quidem, aspernatur corporis voluptatem sit minima. Enim nulla ullam eaque unde quas voluptate fuga soluta, velit corrupti in perferendis expedita, voluptatibus, cumque consectetur est aspernatur eveniet dolorem sapiente quisquam libero vel. Vero adipisci libero sunt impedit deserunt, odit corporis ipsum. Harum cum numquam distinctio, veritatis ducimus laudantium eum enim veniam error quaerat excepturi ex ratione odit eaque, a beatae, nesciunt magni incidunt amet vero reprehenderit. Rem debitis quam facilis iure maxime itaque, doloribus sequi perferendis obcaecati, aliquid distinctio ratione hic vitae!
+                            </p>
+                        </div>
+                        <button type="button" class="btn button primary-button text-uppercase">Download CV</button>
+                    </div>
+                -->
+                </div>
+            </div>
+        </section>
+           <!--End About-->
+
+           <!--Project-->
+           <section class="project-area">
+               <div class="container">
+                   <div class="project-title pb-3">
+                       <h1 class="text-uppercase title-h1" id="anchorProject">
+                           Projects
+                       </h1>
+                   </div>
+                   <div class="button-group">
+                       <button type="button" class="active"  data-filter="*">All</button>
+                       <button type="button" data-filter=".website">Website</button>
+                       <button type="button" data-filter=".mobile">Mobile App</button>
+                    
+                   </div>    
+                   <div class="row grid">
+                       <div class="col-lg-4 col-md-6 col-sm-12 element-item website">
+                        <div class="our-project">
+                            <div class="img">
+                              <a href="/img/portfolio/IS3106AdminLoginPage.png" data-toggle="lightbox" data-gallery="hidden-images1"  data-title="Shoepermarket Login - Client Side (JavaEE)" data-footer="Client Side Login for Staff and Vendors" class="col-4">
+                                <img src="/img/portfolio/IS3106AdminLoginPage.png" class="img-fluid">
+                              </a>
+
+           <a href="/img/portfolio/CreateShoeListing.png" data-toggle="lightbox" data-gallery="hidden-images1"  data-title="Vendor - Create Shoe Listing" data-footer="Basic Information Section" class="col-4">
+            <img src="/img/portfolio/CreateShoeListing.png" class="img-fluid" hidden="true">
+          </a>
+          <a href="/img/portfolio/CreateShoeListingUploadImg.png" data-toggle="lightbox" data-gallery="hidden-images1"  data-title="Vendor - Create Shoe Listing" data-footer="Upload Image(s) Section"" class="col-4">
+            <img src="/img/portfolio/CreateShoeListingUploadImg.png" class="img-fluid" hidden="true">
+          </a>
+          <a href="/img/portfolio/CreateShoeListingCustomisation.png" data-toggle="lightbox" data-gallery="hidden-images1"  data-title="Vendor - Create Shoe Listing" data-footer="Add Shoe Customisation(s) Section" class="col-4">
+            <img src="/img/portfolio/CreateShoeListingCustomisation.png" class="img-fluid" hidden="true">
+          </a>
+          <a href="/img/portfolio/ViewAllShoeListing-listView.png" data-toggle="lightbox" data-gallery="hidden-images1"  data-title="Vendor - View All Shoe Listing" data-footer="List View" class="col-4">
+            <img src="/img/portfolio/ViewAllShoeListing-listView.png" class="img-fluid" hidden="true">
+          </a>
+          <a href="/img/portfolio/ViewAllShoeListing-gridView.png" data-toggle="lightbox" data-gallery="hidden-images1"  data-title="Vendor - View All Shoe Listing" data-footer="Grid View" class="col-4">
+            <img src="/img/portfolio/ViewAllShoeListing-gridView.png" class="img-fluid" hidden="true">
+          </a>
+          <a href="/img/portfolio/ViewShoeDetails.png" data-toggle="lightbox" data-gallery="hidden-images1"  data-title="Vendor - View Shoe Listing Details" data-footer="View Shoe Details" class="col-4">
+            <img src="/img/portfolio/ViewShoeDetails.png" class="img-fluid" hidden="true">
+          </a>
+
+
+
+
+          <a href="/img/portfolio/updateShoeListing1.png" data-toggle="lightbox" data-gallery="hidden-images1"  data-title="Vendor - Update Shoe Listing" data-footer="View Shoe Image(s)" class="col-4">
+            <img src="/img/portfolio/updateShoeListing2.png" class="img-fluid" hidden="true">
+          </a>
+          <a href="/img/portfolio/updateShoeListing2.png" data-toggle="lightbox" data-gallery="hidden-images1"  data-title="Vendor - Update Shoe Listing" data-footer="Update Shoe Image(s)" class="col-4">
+            <img src="/img/portfolio/updateShoeListing3.png" class="img-fluid" hidden="true">
+          </a>
+          <a href="/img/portfolio/updateShoeListing3.png" data-toggle="lightbox" data-gallery="hidden-images1"  data-title="Vendor - Update Shoe Listing" data-footer="Update Shoe Information" class="col-4">
+            <img src="/img/portfolio/updateShoeListing1.png" class="img-fluid" hidden="true">
+          </a>
+
+          <a href="/img/portfolio/restockListing.png" data-toggle="lightbox" data-gallery="hidden-images1"  data-title="Vendor - View Shoe Stocks" data-footer="View Stocks for Size(s) and Customisation(s)" class="col-4">
+
+            <img src="/img/portfolio/restockListing.png" class="img-fluid" hidden="true">
+          </a>
+
+          <a href="/img/portfolio/restockListing-request.png" data-toggle="lightbox" data-gallery="hidden-images1"  data-title="Vendor - Restock Request" data-footer="Restock Request for Shoe Size and Quantity" class="col-4">
+
+            <img src="/img/portfolio/restockListing-request.png" class="img-fluid" hidden="true">
+          </a>
+          <a href="/img/portfolio/restockListing-customisation.png" data-toggle="lightbox" data-gallery="hidden-images1"  data-title="Vendor - Restock Customisation Request" data-footer="Restock Request for Shoe Customisation" class="col-4">
+
+            <img src="/img/portfolio/restockListing-customisation.png" class="img-fluid" hidden="true">
+          </a>
+          <a href="/img/portfolio/DeleteShoeListing.png" data-toggle="lightbox" data-gallery="hidden-images1"  data-title="Vendor - Delete Shoe Listing" data-footer="Delete Shoe" class="col-4">
+            <img src="/img/portfolio/DeleteShoeListing.png" class="img-fluid" hidden="true">
+
+
+          </a>
+          <a href="/img/portfolio/angualrHomepage-nologin.png" data-toggle="lightbox" data-gallery="hidden-images1"  data-title="Shoepermarket - Customer Side (Angular)" data-footer="Customer Side Browse Shoes and Login" class="col-4">
+            <img src="/img/portfolio/DeleteShoeListing.png" class="img-fluid" hidden="true">
+
+            
+          </a>
+          <a href="/img/portfolio/angular-filter.png" data-toggle="lightbox" data-gallery="hidden-images1"  data-title="Shoepermarket - Customer Side (Angular)
+          " data-footer="Customer Side Browse Shoes with filter(s)" class="col-4">
+            <img src="/img/portfolio/angular-filter.png" class="img-fluid" hidden="true">
+
+            
+          </a>
+          <a href="/img/portfolio/angular-view-shoeDetails.png" data-toggle="lightbox" data-gallery="hidden-images1"  data-title="Shoepermarket - Customer Side (Angular)
+          " data-footer="Customer View Shoe Details" class="col-4">
+            <img src="/img/portfolio/angular-view-shoeDetails.png" class="img-fluid" hidden="true">
+
+            
+          </a>
+          <a href="/img/portfolio/addShoeToCart.png" data-toggle="lightbox" data-gallery="hidden-images1"  data-title="Shoepermarket - Customer Side (Angular)
+          " data-footer="Customer View Shoe Details and Add Shoe to Cart" class="col-4">
+            <img src="/img/portfolio/addShoeToCart.png" class="img-fluid" hidden="true">
+
+            
+          </a>
+                            </div>
+                         <div class="title py-4">
+                             <h4 class="text-uppercase">Shoepermarket</h4>
+                             <span class="text-secondary">
+                                Enterprise Systems Interface Design and Development
+                             </span>
+
+                             <div id="accordion" class="accordion">
+                              <div class="card mb-0">
+                                  <div class="card-header collapsed" data-toggle="collapse" href="#collapseOne">
+                                      <a class="card-title"> Descriptions </a>
+                                  </div>
+                                  <div id="collapseOne" class="card-body collapse" data-parent="#accordion">
+                                      <p>Shoepermarket is a business to business to consumer (B2B2C) solution that provides a dedicated one stop application for shoe wears for our customers. With all the shoe listings from different vendors /retailers, it eliminates the need for our customers to manually source and compare prices from different platforms</p>
+                                      <p><a href="https://www.youtube.com/watch?v=chw2TjlBLjI&feature=youtu.be">Demo Video</a></p>
+                                  </div>
+                              </div>
+                        
+                          <div class="card mb-0">
+                            <div class="card-header collapsed" data-toggle="collapse" href="#collapseTwo">
+                                <a class="card-title"> Technology/Language Used </a>
+                            </div>
+                            <div id="collapseTwo" class="card-body collapse" data-parent="#accordion">
+                                <p>Netbeans JavaEE, Glassfish, Angular, Primefaces, Bootfaces, Angular Material Deisgn </p>
+                            </div>
+                        </div>
+                        <div class="card mb-0">
+                          <div class="card-header collapsed" data-toggle="collapse" href="#collapseThree">
+                              <a class="card-title">Functions/Features</a>
+                          </div>
+                          <div id="collapseThree" class="card-body collapse" data-parent="#accordion">
+                              <p>Login & Register</p>
+                              <p>Browse Products</p>
+                          </div>
+                      </div>
+                      </div>
+                           
+
+                         </div>
+                        </div>
+                       </div>
+
+                       <div class="col-lg-4 col-md-6 col-sm-12 element-item website">
+                        <div class="our-project">
+                            <div class="img">
+                              <a href="/img/portfolio/FDS-Login.png" data-toggle="lightbox" 
+                              data-title="FDS Login Page" data-footer="Users Login Page"
+                              data-gallery="hidden-images2" class="col-4">
+                                <img src="/img//portfolio/FDS-Login.png" class="img-fluid">
+                              </a>
+
+           <a href="/img/portfolio/FDS-HomePage.png" data-toggle="lightbox" data-gallery="hidden-images2"  data-title="Home Page" data-footer="Customer browse restaurant and search for food" class="col-4">
+            <img src="/img/portfolio/FDS-HomePage.png" class="img-fluid" hidden="true">
+          </a>
+          <a href="/img/portfolio/FDS-ViewMenuListing.png" data-toggle="lightbox" data-gallery="hidden-images2"  data-title="View Restaurant Food Menu" data-footer="Customer view restaurant's food menu" class="col-4">
+            <img src="/img/portfolio/FDS-ViewMenuListing.png" class="img-fluid" hidden="true">
+          </a>
+          <a href="/img/portfolio/FDS-addItemToCart.png" data-toggle="lightbox" data-gallery="hidden-images2"  data-title="Add Food to Cart" data-footer="Customer add restaurant food to cart" class="col-4">
+            <img src="/img/portfolio/FDS-addItemToCart.png" class="img-fluid" hidden="true">
+          </a>
+          <a href="/img/portfolio/FDS-viewMyCart.png" data-toggle="lightbox" data-gallery="hidden-images2"  data-title="Customer View My Cart" data-footer="Customer View My Cart" class="col-4">
+            <img src="/img/portfolio/FDS-viewMyCart.png" class="img-fluid" hidden="true">
+          </a>
+          <a href="/img/portfolio/FDS-CheckoutCart.png" data-toggle="lightbox" data-gallery="hidden-images2"  data-title="Customer Checkout Cart" data-footer="Customer Checkout Order" class="col-4">
+            <img src="/img/portfolio/FDS-CheckoutCart.png" class="img-fluid" hidden="true">
+          </a>
+
+          <a href="/img/portfolio/FDS-CustomerViewOrder.png" data-toggle="lightbox" data-gallery="hidden-images2"  data-title="Customer View Order" data-footer="Customer View placed ordered and check on the order status" class="col-4">
+            <img src="/img/portfolio/FDS-CustomerViewOrder.png" class="img-fluid" hidden="true">
+          </a>
+
+          <a href="/img/portfolio/FDS-CustomerViewOrderDetails.png" data-toggle="lightbox" data-gallery="hidden-images2"  data-title="Customer View Order Details" data-footer="Customer view order details" class="col-4">
+            <img src="/img/portfolio/FDS-CustomerViewOrderDetails.png" class="img-fluid" hidden="true">
+          </a>
+
+          <a href="/img/portfolio/FDS-ReviewOnFood.png" data-toggle="lightbox" data-gallery="hidden-images2"  data-title="Customer Review Order" data-footer="Customer review on the purchase" class="col-4">
+            <img src="/img/portfolio/FDS-ReviewOnFood.png" class="img-fluid" hidden="true">
+          </a>
+
+          <a href="/img/portfolio/FDS-CustomerRateDeliveryService.png" data-toggle="lightbox" data-gallery="hidden-images2"  data-title="Customer Rate Delivery Service" data-footer="Customer rate on the delivery service" class="col-4">
+            <img src="/img/portfolio/FDS-CustomerRateDeliveryService.png" class="img-fluid" hidden="true">
+          </a>
+
+          <a href="/img/portfolio/FDS-DeliveryDriverUpdateOrderStatus.png" data-toggle="lightbox" data-gallery="hidden-images2"  data-title="Delivery Driver View Assigned Orders" data-footer="Delivery driver view their asignssed order and update the order status" class="col-4">
+            <img src="/img/portfolio/FDS-DeliveryDriverUpdateOrderStatus.png" class="img-fluid" hidden="true">
+          </a>
+          
+
+       
+                            </div>
+                         <div class="title py-4">
+                             <h4 class="text-uppercase">Food Delivery Service (FDS)</h4>
+                             <span class="text-secondary">
+                              Database Systems
+                             </span>
+                             <div id="accordion2" class="accordion">
+                              <div class="card mb-0">
+                                  <div class="card-header collapsed" data-toggle="collapse" href="#collapseOne2">
+                                      <a class="card-title"> Descriptions </a>
+                                  </div>
+                                  <div id="collapseOne2" class="card-body collapse" data-parent="#accordion2">
+                                      <p>FDS is a ........</p>
+                                  </div>
+                              </div>
+                        
+                          <div class="card mb-0">
+                            <div class="card-header collapsed" data-toggle="collapse" href="#collapseTwo2">
+                                <a class="card-title"> Technology/Language Used </a>
+                            </div>
+                            <div id="collapseTwo2" class="card-body collapse" data-parent="#accordion2">
+                                <p>PostgreSQL, Laravel PHP, Boostrap 4, JavaScript</p>
+                            </div>
+                        </div>
+                        <div class="card mb-0">
+                          <div class="card-header collapsed" data-toggle="collapse" href="#collapseThree2">
+                              <a class="card-title">Functions/Features</a>
+                          </div>
+                          <div id="collapseThree2" class="card-body collapse" data-parent="#accordion2">
+                              <p>Login & Register</p>
+                              <p>Browse Products</p>
+                          </div>
+                      </div>
+                      </div>
+
+                         </div>
+                        </div>
+                       </div>
+                       <div class="col-lg-4 col-md-6 col-sm-12 element-item website">
+                        <div class="our-project">
+                            <div class="img">
+                              <a href="/img/portfolio/ACIWebPortal.png" data-toggle="lightbox" 
+                              data-title="ACI Web Portal"
+                              data-gallery="hidden-images5" class="col-4">
+                                <img src="/img/portfolio/ACIWebPortal.png" class="img-fluid">
+                              </a>
+
+          
+
+          <a href="/img/portfolio/ACIWebPortal.png" data-toggle="lightbox" data-gallery="hidden-images5"  data-title="Under Construction" data-footer="footer" class="col-4">
+            <img src="/img/portfolio/ACIWebPortal.png" class="img-fluid" hidden="true">
+          </a>
+          
+
+       
+                            </div>
+                         <div class="title py-4">
+                             <h4 class="text-uppercase">ACI Web Portal</h4>
+                            
+                             <span class="text-secondary">
+                             Project from Asian Culinary Institude, work in NYP
+                             </span>
+                             <div id="accordion5" class="accordion">
+                              <div class="card mb-0">
+                                  <div class="card-header collapsed" data-toggle="collapse" href="#collapseOne5">
+                                      <a class="card-title"> Descriptions </a>
+                                  </div>
+                                  <div id="collapseOne5" class="card-body collapse" data-parent="#accordion5">
+                                      <p>NYP</p>
+                                  </div>
+                              </div>
+                        
+                          <div class="card mb-0">
+                            <div class="card-header collapsed" data-toggle="collapse" href="#collapseTwo5">
+                                <a class="card-title"> Technology/Language Used </a>
+                            </div>
+                            <div id="collapseTwo5" class="card-body collapse" data-parent="#accordion5">
+                                <p>PostgreSQL, Laravel PHP, Boostrap 4, JavaScript</p>
+                            </div>
+                        </div>
+                        <div class="card mb-0">
+                          <div class="card-header collapsed" data-toggle="collapse" href="#collapseThree5">
+                              <a class="card-title">Functions/Features</a>
+                          </div>
+                          <div id="collapseThree5" class="card-body collapse" data-parent="#accordion5">
+                              <p>Login & Register</p>
+                              <p>Browse Products</p>
+                          </div>
+                      </div>
+                      </div>
+
+                         </div>
+                        </div>
+                       </div>
+
+
+
+                       <div class="col-lg-4 col-md-6 col-sm-12 element-item website">
+                        <div class="our-project">
+                            <div class="img">
+                              <a href="/img/portfolio/ITELMS-FeatureOverview.png" data-toggle="lightbox" 
+                              data-title="Features Overview"
+                              data-gallery="hidden-images3" class="col-4">
+                                <img src="/img/portfolio/ITELMS-FeatureOverview.png" class="img-fluid">
+                              </a>
+
+          
+
+          <a href="/img/portfolio/ITELMS-FeatureOverview.png" data-toggle="lightbox" data-gallery="hidden-images3"  data-title="Features Overview" class="col-4">
+            <img src="/img/portfolio/ITELMS-FeatureOverview.png" class="img-fluid" hidden="true">
+          </a>
+          
+
+       
+                            </div>
+                         <div class="title py-4">
+                             <h4 class="text-uppercase">IT Equipment Lifecycle </h4>
+                             <h4 class="text-uppercase" style="margin-top: 15px;"> Management System</h4>
+                             <span class="text-secondary">
+                             Internship in ST Asset Managment
+                             </span>
+                             <div id="accordion3" class="accordion">
+                              <div class="card mb-0">
+                                  <div class="card-header collapsed" data-toggle="collapse" href="#collapseOne3">
+                                      <a class="card-title"> Descriptions </a>
+                                  </div>
+                                  <div id="collapseOne3" class="card-body collapse" data-parent="#accordion3">
+                                      <p>NYP</p>
+                                  </div>
+                              </div>
+                        
+                          <div class="card mb-0">
+                            <div class="card-header collapsed" data-toggle="collapse" href="#collapseTwo3">
+                                <a class="card-title"> Technology/Language Used </a>
+                            </div>
+                            <div id="collapseTwo3" class="card-body collapse" data-parent="#accordion3">
+                                <p>PostgreSQL, Laravel PHP, Boostrap 4, JavaScript</p>
+                            </div>
+                        </div>
+                        <div class="card mb-0">
+                          <div class="card-header collapsed" data-toggle="collapse" href="#collapseThree3">
+                              <a class="card-title">Functions/Features</a>
+                          </div>
+                          <div id="collapseThree3" class="card-body collapse" data-parent="#accordion3">
+                              <p>Login & Register</p>
+                              <p>Browse Products</p>
+                          </div>
+                      </div>
+                      </div>
+
+                         </div>
+                        </div>
+                       </div>
+
+                      
+
+                       <div class="col-lg-4 col-md-6 col-sm-12 element-item website">
+                        <div class="our-project">
+                            <div class="img">
+                              <a href="/img/portfolio/DataMigration-workflow.png" data-toggle="lightbox" 
+                              data-title="Data Migration Workflow" data-footer=""
+                              data-gallery="hidden-images4" class="col-4">
+                                <img src="/img/portfolio/DataMigration-workflow.png" class="img-fluid">
+                              </a>
+
+          
+
+          <a href="/img/portfolio/DataMigration-Home.png" data-toggle="lightbox" data-gallery="hidden-images4"  data-title="Data Migration - Generate Template" data-footer="User select tables that they want to fill in the data and system will check for related tables and generate the template for user to download" class="col-4">
+            <img src="/img/portfolio/DataMigration-Home.png" class="img-fluid" hidden="true">
+          </a>
+          <a href="/img/portfolio/DataMigration-SampleTemplate.png" data-toggle="lightbox" data-gallery="hidden-images4"  data-title="Data Migration - Template Sample" data-footer="Instruction sheet that provides instruction for user to fill in the data correctly" class="col-4">
+            <img src="/img/portfolio/DataMigration-SampleTemplate.png" class="img-fluid" hidden="true">
+          </a>
+          <a href="/img/portfolio/DataMigration-SampleTemplate2.png" data-toggle="lightbox" data-gallery="hidden-images4"  data-title="Data Migration - Template Sample 2" data-footer="Template Sample for fill in data for the select table and it's related table(s)" class="col-4">
+            <img src="/img/portfolio/DataMigration-SampleTemplate2.png" class="img-fluid" hidden="true">
+          </a>
+          <a href="/img/portfolio/DataMigration-uploadData.png" data-toggle="lightbox" data-gallery="hidden-images4"  data-title="Data Migration - Upload Data" data-footer="User select the table that they want to upload data with and upload the excel file" class="col-4">
+            <img src="/img/portfolio/DataMigration-uploadData.png" class="img-fluid" hidden="true">
+          </a>
+          <a href="/img/portfolio/DataMigration-Validations.png" data-toggle="lightbox" data-gallery="hidden-images4"  data-title="Data Migration - Data Validations" data-footer="System validate the data in the excel file and show message(s)" class="col-4">
+            <img src="/img/portfolio/DataMigration-Validations.png" class="img-fluid" hidden="true">
+          </a>
+          <a href="/img/portfolio/DataMigration-uploadedSuccessed.png" data-toggle="lightbox" data-gallery="hidden-images4"  data-title="Data Migration - Uploaded Sucessfully" data-footer="Data uploaded successfully and display sucess message" class="col-4">
+            <img src="/img/portfolio/DataMigration-uploadedSuccessed.png" class="img-fluid" hidden="true">
+          </a>
+          
+          <a href="/img/portfolio/DataMigration-ContainsExistRecord.png" data-toggle="lightbox" data-gallery="hidden-images4"  data-title="Data Migration - Contains Existing Record" data-footer="The data is already exist and prompt if want to overwrite the record" class="col-4">
+            <img src="/img/portfolio/DataMigration-ContainsExistRecord.png" class="img-fluid" hidden="true">
+          </a>
+          <a href="/img/portfolio/DataMigration-uploadFailMessage.png" data-toggle="lightbox" data-gallery="hidden-images4"  data-title="Data Migration - Upload Failed" data-footer="Data failed to upload and display error message" class="col-4">
+            <img src="/img/portfolio/DataMigration-uploadFailMessage.png" class="img-fluid" hidden="true">
+          </a>
+          
+
+       
+                            </div>
+                         <div class="title py-4">
+                             <h4 class="text-uppercase">ACI - Trainee Management</h4>
+                             <h4 class="text-uppercase" style="margin-top: 15px;">System (TMS)</h4>
+                             
+                             <span class="text-secondary">
+                             FYP in Nanyang Polytechnic (Industry Project)
+                             </span>
+                             <div id="accordion4" class="accordion">
+                              <div class="card mb-0">
+                                  <div class="card-header collapsed" data-toggle="collapse" href="#collapseOne4">
+                                      <a class="card-title"> Descriptions </a>
+                                  </div>
+                                  <div id="collapseOne4" class="card-body collapse" data-parent="#accordion4">
+                                      <p>NYP</p>
+                                  </div>
+                              </div>
+                        
+                          <div class="card mb-0">
+                            <div class="card-header collapsed" data-toggle="collapse" href="#collapseTwo4">
+                                <a class="card-title"> Technology/Language Used </a>
+                            </div>
+                            <div id="collapseTwo4" class="card-body collapse" data-parent="#accordion4">
+                                <p>Asp.Net C#, SQL Server Management Studio, Visual Studio
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card mb-0">
+                          <div class="card-header collapsed" data-toggle="collapse" href="#collapseThree4">
+                              <a class="card-title">Functions/Features</a>
+                          </div>
+                          <div id="collapseThree4" class="card-body collapse" data-parent="#accordion4">
+                              <p>Login & Register</p>
+                              <p>Browse Products</p>
+                          </div>
+                      </div>
+                      </div>
+
+                         </div>
+                        </div>
+                       </div>
+                   </div>
+               </div>
+
+               
+
+
+               
+               
+
+               
+           </section>
+
+
+       
+
+           <!--End Project-->
+    </main>
+    <!-- End Main-->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="">
+                <div class="site-logo text-center py-4">
+              
+                </div>
+                <div class="social text-center">
+                    <h5 class="text-uppercase">Follow me</h5>
+                    <a href="https://www.facebook.com/lili.lin.224"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/lili__2319/?hl=en"><i class="fab fa-instagram"></i></a>
+                
+                </div>
+     
+            </div>
+        </div>
+    </footer>
+
+    <!--Jquery js file-->
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <!--Bootstrap js file-->
+<script src="./js/bootstrap.min.js"></script>
+<!-- isotope js library-->
+<script src="./vendor/isotope/isotope.min.js"></script>
+<!--ekko-lightbox-->
+<script src="./js/ekko-lightbox.min.js"></script>
+
+<!-- Magnific popup script file-->
+<script src="./vendor/Magnific-Popup/dist/jquery.magnific-popup.min.js"></script>
+<!-- custom js file -->
+<script src="./js/main.js"></script>
+
+</body>
+</html>
