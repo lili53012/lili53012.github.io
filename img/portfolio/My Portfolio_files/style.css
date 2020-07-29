@@ -108,7 +108,6 @@
 }
 .site-main .project-area .grid .our-project > .title h4{
     font:normal 700 25px/12px var(--roboto);
-    line-height: 1;
 }
 
 .site-main .project-area .grid .our-project .img a:hover img{

@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)https://lili53012.github.io/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="./My Portfolio_files/jquery-1.11.1.min.js"></script>
+
+    <!-- Bootstrap css file-->
+    <link rel="stylesheet" href="./My Portfolio_files/bootstrap.min.css">
+    <!-- font awesome icons-->
+    <link rel="stylesheet" href="./My Portfolio_files/all.min.css">
+    <!--Magnific Popup css file-->
+    <link rel="stylesheet" href="./My Portfolio_files/magnific-popup.css">
+      <!-- ekko lightbox-->
+      <link rel="stylesheet" href="./My Portfolio_files/ekko-lightbox.css">
+
+    <!-- custom css file note: it will overwrite what is in boostrap css so we placed below-->
+    <link rel="stylesheet" href="./My Portfolio_files/style.css">
+
+    <!--  Responsive css file  -->
+    <link rel="stylesheet" href="./My Portfolio_files/responsive.css">
+  
+<style>._3emE9--dark-theme .-S-tR--ff-downloader{background:rgba(30,30,30,.93);border:1px solid rgba(82,82,82,.54);box-shadow:0 4px 7px rgba(30,30,30,.55);color:#fff}._3emE9--dark-theme .-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn{background:#3d4b52}._3emE9--dark-theme .-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn:hover{background:#131415}._3emE9--dark-theme .-S-tR--ff-downloader ._10vpG--footer{background:rgba(30,30,30,.93)}._2mDEx--white-theme .-S-tR--ff-downloader{background:#fff;border:1px solid rgba(82,82,82,.54);box-shadow:0 4px 7px rgba(30,30,30,.55);color:#314c75}._2mDEx--white-theme .-S-tR--ff-downloader ._6_Mtt--header{font-weight:700}._2mDEx--white-theme .-S-tR--ff-downloader ._2dFLA--container ._2bWNS--notice{border:0;color:rgba(0,0,0,.88)}._2mDEx--white-theme .-S-tR--ff-downloader ._10vpG--footer{background:#fff}.-S-tR--ff-downloader{display:block;overflow:hidden;position:fixed;bottom:20px;right:7.1%;width:330px;height:180px;background:rgba(30,30,30,.93);border-radius:2px;color:#fff;z-index:99999999;border:1px solid rgba(82,82,82,.54);box-shadow:0 4px 7px rgba(30,30,30,.55);transition:.5s}.-S-tR--ff-downloader._3M7UQ--minimize{height:62px}.-S-tR--ff-downloader._3M7UQ--minimize .nxuu4--file-info,.-S-tR--ff-downloader._3M7UQ--minimize ._6_Mtt--header{display:none}.-S-tR--ff-downloader ._6_Mtt--header{padding:10px;font-size:17px;font-family:sans-serif}.-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn{float:right;background:#f1ecec;height:20px;width:20px;text-align:center;padding:2px;margin-top:-10px;cursor:pointer}.-S-tR--ff-downloader ._6_Mtt--header ._2VdJW--minimize-btn:hover{background:#e2dede}.-S-tR--ff-downloader ._13XQ2--error{color:red;padding:10px;font-size:12px;line-height:19px}.-S-tR--ff-downloader ._2dFLA--container{position:relative;height:100%}.-S-tR--ff-downloader ._2dFLA--container .nxuu4--file-info{padding:6px 15px 0;font-family:sans-serif}.-S-tR--ff-downloader ._2dFLA--container .nxuu4--file-info div{margin-bottom:5px;width:100%;overflow:hidden}.-S-tR--ff-downloader ._2dFLA--container ._2bWNS--notice{margin-top:21px;font-size:11px}.-S-tR--ff-downloader ._10vpG--footer{width:100%;bottom:0;position:absolute;font-weight:700}.-S-tR--ff-downloader ._10vpG--footer ._2V73d--loader{-webkit-animation:n0BD1--rotation 3.5s linear forwards;animation:n0BD1--rotation 3.5s linear forwards;position:absolute;top:-120px;left:calc(50% - 35px);border-radius:50%;border:5px solid #fff;border-top-color:#a29bfe;height:70px;width:70px;display:flex;justify-content:center;align-items:center}.-S-tR--ff-downloader ._10vpG--footer ._24wjw--loading-bar{width:100%;height:18px;background:#dfe6e9;border-radius:5px}.-S-tR--ff-downloader ._10vpG--footer ._24wjw--loading-bar ._1FVu9--progress-bar{height:100%;background:#8bc34a;border-radius:5px}.-S-tR--ff-downloader ._10vpG--footer ._2KztS--status{margin-top:10px}.-S-tR--ff-downloader ._10vpG--footer ._2KztS--status ._1XilH--state{float:left;font-size:.9em;letter-spacing:1pt;text-transform:uppercase;width:100px;height:20px;position:relative}.-S-tR--ff-downloader ._10vpG--footer ._2KztS--status ._1jiaj--percentage{float:right}._3vFA8--container{height:0;width:100%;position:relative;background:radial-gradient(44.6% 929.87% at 22.02% 63.39%,#ae6fff 0,#8d35fd 100%);cursor:pointer;overflow:hidden;transition:.8s}._3vFA8--container .AeJ0I--row{padding:11px;margin:0 auto;width:-webkit-max-content;width:-moz-max-content;width:max-content}._3vFA8--container .AeJ0I--row ._1yCun--logo{position:relative;width:51px;height:39px;float:left;margin-right:104px;background:url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNDEiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNy40MDQgOC43TDEuNDU0IDM2LjMyNWMtLjI1OC40NDctLjM4Ny42Ny0uNDUxLjgzOWEyLjIzNiAyLjIzNiAwIDAwMS43MzMgMy4wMDFjLjE3OC4wMy40MzYuMDMuOTUyLjAzLjEwNiAwIC4xNTggMCAuMjEtLjAwM2EyLjIzNyAyLjIzNyAwIDAwMS4yNTItLjQ1Mmw2Ljg1OS00LjcyMWMuNDczLS4zLjkwOC0uNjU0IDEuMjk2LTEuMDUyLjM1NC4wOC43MjcuMTg1IDEuMTQ1LjMwMSAxLjk1LjU0NCA0Ljg4MyAxLjM2IDExLjUxNiAxLjM2IDcuNjcyIDAgMTAuNjEtLjg3NCAxMi4xNTQtMS40NzEuMzguMzQzLjc5Ni42NDYgMS4yNDQuOTA0bDcuNDg4IDQuODE0Yy4zMjQuMjA4LjcwMi4zMiAxLjA4OC4zMiAxLjU1IDAgMi41MTgtMS42NzggMS43NDMtMy4wMkwzMy4yNDIgOC43Yy0yLjU3LTQuNDUyLTMuODU2LTYuNjc5LTUuNTI1LTcuNDQzYTUuNzUxIDUuNzUxIDAgMDAtNC43ODggMGMtMS42NjkuNzY0LTIuOTU0IDIuOTktNS41MjUgNy40NDN6bTguNTYyIDIyLjUyNGMtNC4yNDYgMC03LjU0OC0uNTk4LTkuOTI1LTEuNTM0bC4wMDEtLjAwMmMtLjU2MS0uMjQtMS40MjItLjc4My0xLjIyOC0xLjI5NS4xOTctLjUyIDEuNDQ0LS41MDcgMi4xOC0uMzRsNS4wNzYtOC43MiAzLjU1LTIuNTQ0LTIuMjUuMzEuMDE0LS4wMjMtMi40NTMuMjdjLS40NC4wNS0uNjU4LjA3My0uNzU0LjAwNGEuMzA0LjMwNCAwIDAxLS4xMjMtLjI3MmMuMDEtLjExNy4xNzItLjI2Ni40OTYtLjU2NCAxLjMwNS0xLjE5OCAzLjM3Mi0zLjA5IDMuNzQ3LTMuMzk4YTEuNDM4IDEuNDM4IDAgMDEyLjIwMy40NzhsNy4zMTcgMTMuNDc4Yy45MjItLjI0NCAyLjMwOC0uMzU2IDIuNDU1LjQ4OC4xMy43NDMtLjYwNyAxLjI1OS0yLjM2NyAyLjAyNC0xLjcyMy44LTQuNjY3IDEuNjQtNy45MzkgMS42NHoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=)}._3vFA8--container .AeJ0I--row ._1yCun--logo ._2GogZ--stars ._1ErQY--star-1,._3vFA8--container .AeJ0I--row ._1yCun--logo ._2GogZ--stars ._2JsUk--star-2,._3vFA8--container .AeJ0I--row ._1yCun--logo ._2GogZ--stars ._181pR--star-3{position:absolute}._3vFA8--container .AeJ0I--row ._1yCun--logo ._2GogZ--stars ._1ErQY--star-1{background:url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIwIiBoZWlnaHQ9IjU2IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbHRlcj0idXJsKCNmaWx0ZXIwX2QpIj48cGF0aCBkPSJNNTUuNjU1IDM3LjAyNWMuNDc0LTEuNjMgMi41ODYtMi4wNTUgMy42NTMtLjczNWwzLjU4NSA0LjQzNWMuNDE0LjUxMiAxLjA0My44IDEuNy43OGw1LjctLjE3OGMxLjY5OC0uMDUzIDIuNzU1IDEuODI0IDEuODI5IDMuMjQ4bC0zLjExIDQuNzhhMi4xMDIgMi4xMDIgMCAwMC0uMjE3IDEuODU4bDEuOTMxIDUuMzY2Yy41NzUgMS41OTgtLjg4NCAzLjE4My0yLjUyNCAyLjc0MmwtNS41MDctMS40ODFhMi4xMDIgMi4xMDIgMCAwMC0xLjgzNC4zNjlsLTQuNTA3IDMuNDk0Yy0xLjM0MiAxLjA0LTMuMy4xNDMtMy4zODctMS41NTNsLS4yOTQtNS42OTVhMi4xMDIgMi4xMDIgMCAwMC0uOTE3LTEuNjNsLTQuNzE3LTMuMjA3Yy0xLjQwNC0uOTU1LTEuMTU1LTMuMDk0LjQzLTMuNzAybDUuMzI3LTIuMDM4YTIuMTAyIDIuMTAyIDAgMDAxLjI2Ny0xLjM3N2wxLjU5Mi01LjQ3NnoiIGZpbGw9IiNGRkQ2MDAiLz48L2c+PGRlZnM+PGZpbHRlciBpZD0iZmlsdGVyMF9kIiB4PSIuMTI3IiB5PSItMTEuMDkiIHdpZHRoPSIxMTkuMzI3IiBoZWlnaHQ9IjExOC40NjIiIGZpbHRlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj48ZmVGbG9vZCBmbG9vZC1vcGFjaXR5PSIwIiByZXN1bHQ9IkJhY2tncm91bmRJbWFnZUZpeCIvPjxmZUNvbG9yTWF0cml4IGluPSJTb3VyY2VBbHBoYSIgdmFsdWVzPSIwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAxMjcgMCIvPjxmZU9mZnNldC8+PGZlR2F1c3NpYW5CbHVyIHN0ZERldmlhdGlvbj0iMjIiLz48ZmVDb2xvck1hdHJpeCB2YWx1ZXM9IjAgMCAwIDAgMSAwIDAgMCAwIDEgMCAwIDAgMCAxIDAgMCAwIDAuNSAwIi8+PGZlQmxlbmQgaW4yPSJCYWNrZ3JvdW5kSW1hZ2VGaXgiIHJlc3VsdD0iZWZmZWN0MV9kcm9wU2hhZG93Ii8+PGZlQmxlbmQgaW49IlNvdXJjZUdyYXBoaWMiIGluMj0iZWZmZWN0MV9kcm9wU2hhZG93IiByZXN1bHQ9InNoYXBlIi8+PC9maWx0ZXI+PC9kZWZzPjwvc3ZnPg==");width:120px;height:56px;top:-12px;left:-103px;background-size:120px 56px}._3vFA8--container .AeJ0I--row ._1yCun--logo ._2GogZ--stars ._2JsUk--star-2{background:url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTE1IiBoZWlnaHQ9IjU2IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbHRlcj0idXJsKCNmaWx0ZXIwX2QpIj48cGF0aCBkPSJNNTguMzg4LTUuNjljLjg4NS0xLjAyNSAyLjU1Ny0uNjMzIDIuODkzLjY3OUw2Mi40MS0uNjA2Yy4xMy41MDguNDkuOTI2Ljk3NCAxLjEzbDQuMTkzIDEuNzYxYzEuMjQ4LjUyNCAxLjM5MiAyLjIzNi4yNDggMi45NjFsLTMuODQgMi40MzVjLS40NDQuMjgtLjczLjc1My0uNzc0IDEuMjc2bC0uMzggNC41MzFjLS4xMTMgMS4zNS0xLjY5NiAyLjAxNS0yLjc0IDEuMTUxbC0zLjUwMS0yLjlhMS42NzYgMS42NzYgMCAwMC0xLjQ1My0uMzQxbC00LjQyNyAxLjA0Yy0xLjMxOC4zMDktMi40NC0uOTkyLTEuOTQxLTIuMjVsMS42NzYtNC4yMjhhMS42NzYgMS42NzYgMCAwMC0uMTI0LTEuNDg3TDQ3Ljk2NC41ODRjLS43MDItMS4xNTguMTg5LTIuNjI3IDEuNTQtMi41NDFsNC41MzguMjg4YTEuNjc2IDEuNjc2IDAgMDAxLjM3Ni0uNTc4bDIuOTctMy40NDN6IiBmaWxsPSIjRkZENjAwIi8+PC9nPjxkZWZzPjxmaWx0ZXIgaWQ9ImZpbHRlcjBfZCIgeD0iLjk2MiIgeT0iLTUyLjY2OCIgd2lkdGg9IjExMy40NzciIGhlaWdodD0iMTEyLjgyMSIgZmlsdGVyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+PGZlQ29sb3JNYXRyaXggaW49IlNvdXJjZUFscGhhIiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDEyNyAwIi8+PGZlT2Zmc2V0Lz48ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIyMiIvPjxmZUNvbG9yTWF0cml4IHZhbHVlcz0iMCAwIDAgMCAxIDAgMCAwIDAgMSAwIDAgMCAwIDEgMCAwIDAgMC41IDAiLz48ZmVCbGVuZCBpbjI9IkJhY2tncm91bmRJbWFnZUZpeCIgcmVzdWx0PSJlZmZlY3QxX2Ryb3BTaGFkb3ciLz48ZmVCbGVuZCBpbj0iU291cmNlR3JhcGhpYyIgaW4yPSJlZmZlY3QxX2Ryb3BTaGFkb3ciIHJlc3VsdD0ic2hhcGUiLz48L2ZpbHRlcj48L2RlZnM+PC9zdmc+");width:114px;height:53px;left:9px;top:-12.63px;background-size:120px 62px}._3vFA8--container .AeJ0I--row ._1yCun--logo ._2GogZ--stars ._181pR--star-3{background:url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAzIiBoZWlnaHQ9IjU2IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbHRlcj0idXJsKCNmaWx0ZXIwX2QpIj48cGF0aCBkPSJNNTEuODAyIDM2LjA5OGMxLjA5OS0xLjQ5MSAzLjQyLTEuMTMyIDQuMDE2LjYyMmwyLjAwMSA1Ljg4N2MuMjMxLjY4Ljc2NyAxLjIxMSAxLjQ0OCAxLjQzN2w1LjkgMS45NjFjMS43NTguNTg0IDIuMTMzIDIuOTAzLjY1IDQuMDExbC00Ljk4IDMuNzIzYTIuMjkyIDIuMjkyIDAgMDAtLjkyIDEuODIxbC0uMDQyIDYuMjE4Yy0uMDEyIDEuODUyLTIuMTAxIDIuOTI2LTMuNjE0IDEuODU4bC01LjA4LTMuNTg3YTIuMjkyIDIuMjkyIDAgMDAtMi4wMTYtLjMxMmwtNS45MjYgMS44ODJjLTEuNzY1LjU2LTMuNDMyLTEuMDk1LTIuODgzLTIuODY0bDEuODQtNS45MzlhMi4yOTIgMi4yOTIgMCAwMC0uMzI1LTIuMDE0bC0zLjYyMi01LjA1NWMtMS4wNzgtMS41MDUtLjAxOS0zLjYwMSAxLjgzMy0zLjYyNmw2LjIxOC0uMDg1YTIuMjkyIDIuMjkyIDAgMDAxLjgxNC0uOTMybDMuNjg4LTUuMDA2eiIgZmlsbD0iI0ZGRDYwMCIvPjwvZz48ZGVmcz48ZmlsdGVyIGlkPSJmaWx0ZXIwX2QiIHg9Ii43ODgiIHk9Ii0xLjUzNCIgd2lkdGg9IjEwMi4xMzUiIGhlaWdodD0iMTAxLjEyOSIgZmlsdGVyVW5pdHM9InVzZXJTcGFjZU9uVXNlIiBjb2xvci1pbnRlcnBvbGF0aW9uLWZpbHRlcnM9InNSR0IiPjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+PGZlQ29sb3JNYXRyaXggaW49IlNvdXJjZUFscGhhIiB2YWx1ZXM9IjAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDEyNyAwIi8+PGZlT2Zmc2V0Lz48ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIxNy4yNDYiLz48ZmVDb2xvck1hdHJpeCB2YWx1ZXM9IjAgMCAwIDAgMSAwIDAgMCAwIDEgMCAwIDAgMCAxIDAgMCAwIDAuNSAwIi8+PGZlQmxlbmQgaW4yPSJCYWNrZ3JvdW5kSW1hZ2VGaXgiIHJlc3VsdD0iZWZmZWN0MV9kcm9wU2hhZG93Ii8+PGZlQmxlbmQgaW49IlNvdXJjZUdyYXBoaWMiIGluMj0iZWZmZWN0MV9kcm9wU2hhZG93IiByZXN1bHQ9InNoYXBlIi8+PC9maWx0ZXI+PC9kZWZzPjwvc3ZnPg==");width:114px;height:75px;left:34px;top:-12.63px;background-size:120px 57px}._3vFA8--container .AeJ0I--row ._2CXkc--title{float:left;width:-webkit-max-content;width:-moz-max-content;width:max-content;height:23px;font-family:Montserrat,sans-serif;font-style:normal;font-weight:400;font-size:18px;line-height:37px;color:#fff;text-shadow:0 0 16px #5600c5;margin-right:20px}._3vFA8--container .AeJ0I--row ._1CujY--btn{float:left;flex-direction:row;padding:6px 22px;width:111px;margin-top:-2px;height:38px;background:#ffd600;box-shadow:0 0 28px hsla(0,0%,100%,.5);border-radius:5px}._3vFA8--container .AeJ0I--row ._1CujY--btn ._2Wo2K--btnText{width:66px;height:14px;font-family:Montserrat,serif;font-style:normal;font-weight:600;font-size:11px;line-height:14px;text-align:center;letter-spacing:-.01em;color:#9645fd;align-self:center;margin:6px 0}</style></head>
+
+<body>
+
+    <!--Start Header-->
+    <header class="header_area">
+        <div class="main-menu">
+          <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="https://lili53012.github.io/#"><img src="https://lili53012.github.io/"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <div class="mr-auto"></div>
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="https://lili53012.github.io/#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://lili53012.github.io/#">About</a>
+                    </li>
+                  
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://lili53012.github.io/#anchorProject">Projects</a>
+                      </li>
+                      <!--
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </li>
+                  -->
+         
+                  </ul>
+                
+                </div>
+              </nav>
+            </div>
+        </div>
+    </header>
+    <!--End Header-->
+    
+    <!--Modal-->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Contact Me</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">×</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Mobile Number:
+        <a href="https://lili53012.github.io/#">+65 97735086</a></p>
+        <p>Personal Email: <a href="https://lili53012.github.io/#">summer53012@gmail.com</a></p>
+        <p>School Email: <a href="https://lili53012.github.io/#">e0318915@u.nus.edu</a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+     
+      </div>
+    </div>
+  </div>
+</div>
+    <!--End Modal-->
+    <!-- Start Main -->
+    <main class="site-main">
+        <!--Start Banner-->
+        <section class="site-banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 site-title">
+                    <h3 class="title-text">Hey,</h3>
+                    <h1 class="title-text text-uppercase"> I am LIN LILI</h1>
+                    <h4 class="title-text text-uppercase"> Studying Information Systems in NUS</h4>
+                    <div class="site-buttons">
+                        <div class="d-flex flex-row flex-wrap">
+                            <button type="button" class="btn button primary-button mr-4 text-uppercase" data-toggle="modal" data-target="#exampleModal">Contact Me</button>
+                            <a href="https://lili53012.github.io/resume/Lin%20Li%20Li%20Resume(new1).pdf">
+                            <button type="button" class="btn button secondary-button text-uppercase">Get My CV</button></a>
+                        </div>
+                    </div>
+                    </div>  
+
+
+
+
+                    <div class="col-lg-6 col-md-12 banner-image">
+                      <!--
+                      <img src="./img/myPhoto.JPG" alt="bannerImg" class="imgfluid" style="width: 70%;height: 70%;"> -->
+                     
+                     <h2 class="text-uppercase pt-5">
+                        <span>About Myself</span>
+                    
+                    </h2>
+                     <div class="paragraph py-4 w-75">
+                        <p class="para">
+                          I am year 3 student pursuding Information System offered by NUS.
+                        </p>
+                        <p class="para">
+                           I have experience in many different types of projects during my school days. I am mainly interested in website and mobile development. I hope to gain more experience from the IT industry and able to apply what I have learned in the school.
+                        </p>
+                    </div>
+                   <!-- <button type="button" class="btn button primary-button text-uppercase">Download CV</button> -->
+                </div>
+                    </div>
+
+                </div>
+            
+        </section>
+        <!--End Banner-->
+
+        <!--About-->
+        <section class="about-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                   <!-- <div class="about-image">
+                        <img src="./img/about-us.png" alt="About us" class="img-fluid">
+                    </div>   --> 
+                    </div>
+                    <!--
+                    <div class="col-lg-6 col-md-12 about-title">
+                        <h2 class="text-uppercase pt-5">
+                            <span>Let me</span>
+                            <span>Introduce</span>
+                            <span>Myself</span>
+                        </h2>
+                        <div class="paragraph py-4 w-75">
+                            <p class="para">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae commodi aspernatur excepturi possimus molestias quibusdam ut ea totam iusto accusamus!
+                            </p>
+                            <p class="para">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil eveniet sed quo ex, modi obcaecati hic molestiae rem. Vel quidem, aspernatur corporis voluptatem sit minima. Enim nulla ullam eaque unde quas voluptate fuga soluta, velit corrupti in perferendis expedita, voluptatibus, cumque consectetur est aspernatur eveniet dolorem sapiente quisquam libero vel. Vero adipisci libero sunt impedit deserunt, odit corporis ipsum. Harum cum numquam distinctio, veritatis ducimus laudantium eum enim veniam error quaerat excepturi ex ratione odit eaque, a beatae, nesciunt magni incidunt amet vero reprehenderit. Rem debitis quam facilis iure maxime itaque, doloribus sequi perferendis obcaecati, aliquid distinctio ratione hic vitae!
+                            </p>
+                        </div>
+                        <button type="button" class="btn button primary-button text-uppercase">Download CV</button>
+                    </div>
+                -->
+                </div>
+            </div>
+        </section>
+           <!--End About-->
+
+           <!--Project-->
+           <section class="project-area">
+               <div class="container">
+                   <div class="project-title pb-3">
+                       <h1 class="text-uppercase title-h1" id="anchorProject">
+                           Projects
+                       </h1>
+                   </div>
+                   <div class="button-group">
+                       <button type="button" class="active" data-filter="*">All</button>
+                       <button type="button" data-filter=".website">Website</button>
+                       <button type="button" data-filter=".mobile">Mobile App</button>
+                    
+                   </div>    
+                   <div class="row grid">
+                       <div class="col-lg-4 col-md-6 col-sm-12 element-item website">
+                        <div class="our-project">
+                            <div class="img">
+                              <a href="./My Portfolio_files/IS3106AdminLoginPage.png" data-toggle="lightbox" data-gallery="hidden-images1" data-title="Shoepermarket Login - Client Side (JavaEE)" data-footer="Client Side Login for Staff and Vendors" class="col-4">
+                                <img src="./My Portfolio_files/IS3106AdminLoginPage.png" class="img-fluid">
+                              </a>
+
+           <a href="./My Portfolio_files/CreateShoeListing.png" data-toggle="lightbox" data-gallery="hidden-images1" data-title="Vendor - Create Shoe Listing" data-footer="Basic Information Section" class="col-4">
+            <img src="./My Portfolio_files/CreateShoeListing.png" class="img-fluid" hidden="true">
+          </a>
+          <a href="./My Portfolio_files/CreateShoeListingUploadImg.png" data-toggle="lightbox" data-gallery="hidden-images1" data-title="Vendor - Create Shoe Listing" data-footer="Upload Image(s) Section" "="" class="col-4">
+            <img src="./My Portfolio_files/CreateShoeListingUploadImg.png" class="img-fluid" hidden="true">
+          </a>
+          <a href="./My Portfolio_files/CreateShoeListingCustomisation.png" data-toggle="lightbox" data-gallery="hidden-images1" data-title="Vendor - Create Shoe Listing" data-footer="Add Shoe Customisation(s) Section" class="col-4">
+            <img src="./My Portfolio_files/CreateShoeListingCustomisation.png" class="img-fluid" hidden="true">
+          </a>
+          <a href="./My Portfolio_files/ViewAllShoeListing-listView.png" data-toggle="lightbox" data-gallery="hidden-images1" data-title="Vendor - View All Shoe Listing" data-footer="List View" class="col-4">
+            <img src="./My Portfolio_files/ViewAllShoeListing-listView.png" class="img-fluid" hidden="true">
+          </a>
+          <a href="./My Portfolio_files/ViewAllShoeListing-gridView.png" data-toggle="lightbox" data-gallery="hidden-images1" data-title="Vendor - View All Shoe Listing" data-footer="Grid View" class="col-4">
+            <img src="./My Portfolio_files/ViewAllShoeListing-gridView.png" class="img-fluid" hidden="true">
+          </a>
+          <a href="./My Portfolio_files/ViewShoeDetails.png" data-toggle="lightbox" data-gallery="hidden-images1" data-title="Vendor - View Shoe Listing Details" data-footer="View Shoe Details" class="col-4">
+            <img src="./My Portfolio_files/ViewShoeDetails.png" class="img-fluid" hidden="true">
+          </a>
+
+
+
+
+          <a href="./My Portfolio_files/updateShoeListing1.png" data-toggle="lightbox" data-gallery="hidden-images1" data-title="Vendor - Update Shoe Listing" data-footer="View Shoe Image(s)" class="col-4">
+            <img src="./My Portfolio_files/updateShoeListing2.png" class="img-fluid" hidden="true">
+          </a>
+          <a href="./My Portfolio_files/updateShoeListing2.png" data-toggle="lightbox" data-gallery="hidden-images1" data-title="Vendor - Update Shoe Listing" data-footer="Update Shoe Image(s)" class="col-4">
+            <img src="./My Portfolio_files/updateShoeListing3.png" class="img-fluid" hidden="true">
+          </a>
+          <a href="./My Portfolio_files/updateShoeListing3.png" data-toggle="lightbox" data-gallery="hidden-images1" data-title="Vendor - Update Shoe Listing" data-footer="Update Shoe Information" class="col-4">
+            <img src="./My Portfolio_files/updateShoeListing1.png" class="img-fluid" hidden="true">
+          </a>
+
+          <a href="./My Portfolio_files/restockListing.png" data-toggle="lightbox" data-gallery="hidden-images1" data-title="Vendor - View Shoe Stocks" data-footer="View Stocks for Size(s) and Customisation(s)" class="col-4">
+
+            <img src="./My Portfolio_files/restockListing.png" class="img-fluid" hidden="true">
+          </a>
+
+          <a href="./My Portfolio_files/restockListing-request.png" data-toggle="lightbox" data-gallery="hidden-images1" data-title="Vendor - Restock Request" data-footer="Restock Request for Shoe Size and Quantity" class="col-4">
+
+            <img src="./My Portfolio_files/restockListing-request.png" class="img-fluid" hidden="true">
+          </a>
+          <a href="./My Portfolio_files/restockListing-customisation.png" data-toggle="lightbox" data-gallery="hidden-images1" data-title="Vendor - Restock Customisation Request" data-footer="Restock Request for Shoe Customisation" class="col-4">
+
+            <img src="./My Portfolio_files/restockListing-customisation.png" class="img-fluid" hidden="true">
+          </a>
+          <a href="./My Portfolio_files/DeleteShoeListing.png" data-toggle="lightbox" data-gallery="hidden-images1" data-title="Vendor - Delete Shoe Listing" data-footer="Delete Shoe" class="col-4">
+            <img src="./My Portfolio_files/DeleteShoeListing.png" class="img-fluid" hidden="true">
+
+
+          </a>
+          <a href="https://lili53012.github.io/img/portfolio/angualrHomepage-nologin.png" data-toggle="lightbox" data-gallery="hidden-images1" data-title="Shoepermarket - Customer Side (Angular)" data-footer="Customer Side Browse Shoes and Login" class="col-4">
+            <img src="./My Portfolio_files/DeleteShoeListing.png" class="img-fluid" hidden="true">
+
+            
+          </a>
+          <a href="./My Portfolio_files/angular-filter.png" data-toggle="lightbox" data-gallery="hidden-images1" data-title="Shoepermarket - Customer Side (Angular)
+          " data-footer="Customer Side Browse Shoes with filter(s)" class="col-4">
+            <img src="./My Portfolio_files/angular-filter.png" class="img-fluid" hidden="true">
+
+            
+          </a>
+          <a href="./My Portfolio_files/angular-view-shoeDetails.png" data-toggle="lightbox" data-gallery="hidden-images1" data-title="Shoepermarket - Customer Side (Angular)
+          " data-footer="Customer View Shoe Details" class="col-4">
+            <img src="./My Portfolio_files/angular-view-shoeDetails.png" class="img-fluid" hidden="true">
+
+            
+          </a>
+          <a href="./My Portfolio_files/addShoeToCart.png" data-toggle="lightbox" data-gallery="hidden-images1" data-title="Shoepermarket - Customer Side (Angular)
+          " data-footer="Customer View Shoe Details and Add Shoe to Cart" class="col-4">
+            <img src="./My Portfolio_files/addShoeToCart.png" class="img-fluid" hidden="true">
+
+            
+          </a>
+                            </div>
+                         <div class="title py-4">
+                             <h4>Shoepermarket</h4>
+                             <span class="text-secondary">
+                                Enterprise Systems Interface Design and Development
+                             </span>
+
+                             <div id="accordion" class="accordion">
+                              <div class="card mb-0">
+                                  <div class="card-header collapsed" data-toggle="collapse" href="#collapseOne">
+                                      <a class="card-title"> Descriptions </a>
+                                  </div>
+                                  <div id="collapseOne" class="card-body collapse" data-parent="#accordion">
+                                      <p>Shoepermarket is a business to business to consumer (B2B2C) solution that provides a dedicated one stop application for shoe wears for our customers. With all the shoe listings from different vendors /retailers, it eliminates the need for our customers to manually source and compare prices from different platforms</p>
+                                      <p><a href="https://www.youtube.com/watch?v=chw2TjlBLjI&amp;feature=youtu.be" savefrom_lm_index="0" savefrom_lm="1">Demo Video</a><span style="padding: 0; margin: 0; margin-left: 5px;"><a href="http://savefrom.net/?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Dchw2TjlBLjI%26feature%3Dyoutu.be&amp;utm_source=userjs-chrome&amp;utm_medium=extensions&amp;utm_campaign=link_modifier" target="_blank" title="Get a direct link" savefrom_lm="1" savefrom_lm_is_link="1" style="background-image: url(&quot;data:image/gif;base64,R0lGODlhEAAQAOZ3APf39+Xl5fT09OPj4/Hx8evr6/3+/u7u7uDh4OPi497e3t7e3/z8/P79/X3GbuXl5ubl5eHg4WzFUfb39+Pj4lzGOV7LOPz7+/n6+vn5+ZTLj9/e387Ozt7f3/7+/vv7/ISbePn5+m/JV1nRKXmVbkCnKVrSLDqsCuDh4d/e3uDn3/z7/H6TdVeaV1uSW+bn5v39/eXm5eXm5kyHP/f39pzGmVy7J3yRd9/f3mLEKkXCHJbka2TVM5vaZn6Wdfn6+YG/c/r5+ZO/jeLi41aHTIeageLn4f39/vr6+kzNG2PVM5i+lomdf2CXYKHVmtzo2YXNeDqsBebl5uHh4HDKWN3g3kKqEH6WeZHTXIPKdnSPbv79/pfmbE7PHpe1l4O8dTO5DODg4VDLIlKUUtzo2J7SmEWsLlG4NJbFjkrJHP7+/VK5Nfz8+zmnC3KKa+Hg4OHh4Y63j/3+/eDg4Ojo6P///8DAwP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAHcALAAAAAAQABAAAAfWgHd2g4SFhYJzdYqLjIpzgx5bBgYwHg1Hk2oNDXKDFwwfDF5NLmMtcStsn4MhGT8YS04aGmU1QRhIGYMTADQAQlAODlloAMYTgwICRmRfVBISIkBPKsqDBAREZmcVFhYVayUz2IMHB1dWOmImI2lgUVrmgwUFLzdtXTxKSSduMfSD6Aik48MGlx05SAykM0gKhAAPAhTB0oNFABkPHg5KMIBCxzlMQFQZMGBIggSDpsCJgGDOmzkIUCAIM2dOhEEcNijQuQDHgg4KOqRYwMGOIENIB90JBAA7&quot;); background-repeat: no-repeat; width: 16px; height: 16px; display: inline-block; border: none; text-decoration: none; padding: 0px; position: relative;"></a></span></p>
+                                  </div>
+                              </div>
+                        
+                          <div class="card mb-0">
+                            <div class="card-header collapsed" data-toggle="collapse" href="#collapseTwo">
+                                <a class="card-title"> Technology/Language Used </a>
+                            </div>
+                            <div id="collapseTwo" class="card-body collapse" data-parent="#accordion">
+                                <p>Netbeans JavaEE, Glassfish, Angular, Primefaces, Bootfaces, Angular Material Deisgn </p>
+                            </div>
+                        </div>
+                        <div class="card mb-0">
+                          <div class="card-header collapsed" data-toggle="collapse" href="#collapseThree">
+                              <a class="card-title">Functions/Features</a>
+                          </div>
+                          <div id="collapseThree" class="card-body collapse" data-parent="#accordion">
+                              <p>Login &amp; Register</p>
+                              <p>Browse Products</p>
+                          </div>
+                      </div>
+                      </div>
+                           
+
+                         </div>
+                        </div>
+                       </div>
+
+                       <div class="col-lg-4 col-md-6 col-sm-12 element-item website">
+                        <div class="our-project">
+                            <div class="img">
+                              <a href="https://lili53012.github.io/img/portfolio/FDS-Login.png" data-toggle="lightbox" data-title="FDS Login Page" data-footer="Users Login Page" data-gallery="hidden-images2" class="col-4">
+                                <img src="./My Portfolio_files/FDS-Login.png" class="img-fluid">
+                              </a>
+
+           <a href="./My Portfolio_files/FDS-HomePage.png" data-toggle="lightbox" data-gallery="hidden-images2" data-title="Home Page" data-footer="Customer browse restaurant and search for food" class="col-4">
+            <img src="./My Portfolio_files/FDS-HomePage.png" class="img-fluid" hidden="true">
+          </a>
+          <a href="./My Portfolio_files/FDS-ViewMenuListing.png" data-toggle="lightbox" data-gallery="hidden-images2" data-title="View Restaurant Food Menu" data-footer="Customer view restaurant&#39;s food menu" class="col-4">
+            <img src="./My Portfolio_files/FDS-ViewMenuListing.png" class="img-fluid" hidden="true">
+          </a>
+          <a href="./My Portfolio_files/FDS-addItemToCart.png" data-toggle="lightbox" data-gallery="hidden-images2" data-title="Add Food to Cart" data-footer="Customer add restaurant food to cart" class="col-4">
+            <img src="./My Portfolio_files/FDS-addItemToCart.png" class="img-fluid" hidden="true">
+          </a>
+          <a href="./My Portfolio_files/FDS-viewMyCart.png" data-toggle="lightbox" data-gallery="hidden-images2" data-title="Customer View My Cart" data-footer="Customer View My Cart" class="col-4">
+            <img src="./My Portfolio_files/FDS-viewMyCart.png" class="img-fluid" hidden="true">
+          </a>
+          <a href="./My Portfolio_files/FDS-CheckoutCart.png" data-toggle="lightbox" data-gallery="hidden-images2" data-title="Customer Checkout Cart" data-footer="Customer Checkout Order" class="col-4">
+            <img src="./My Portfolio_files/FDS-CheckoutCart.png" class="img-fluid" hidden="true">
+          </a>
+
+          <a href="./My Portfolio_files/FDS-CustomerViewOrder.png" data-toggle="lightbox" data-gallery="hidden-images2" data-title="Customer View Order" data-footer="Customer View placed ordered and check on the order status" class="col-4">
+            <img src="./My Portfolio_files/FDS-CustomerViewOrder.png" class="img-fluid" hidden="true">
+          </a>
+
+          <a href="./My Portfolio_files/FDS-CustomerViewOrderDetails.png" data-toggle="lightbox" data-gallery="hidden-images2" data-title="Customer View Order Details" data-footer="Customer view order details" class="col-4">
+            <img src="./My Portfolio_files/FDS-CustomerViewOrderDetails.png" class="img-fluid" hidden="true">
+          </a>
+
+          <a href="./My Portfolio_files/FDS-ReviewOnFood.png" data-toggle="lightbox" data-gallery="hidden-images2" data-title="Customer Review Order" data-footer="Customer review on the purchase" class="col-4">
+            <img src="./My Portfolio_files/FDS-ReviewOnFood.png" class="img-fluid" hidden="true">
+          </a>
+
+          <a href="./My Portfolio_files/FDS-CustomerRateDeliveryService.png" data-toggle="lightbox" data-gallery="hidden-images2" data-title="Customer Rate Delivery Service" data-footer="Customer rate on the delivery service" class="col-4">
+            <img src="./My Portfolio_files/FDS-CustomerRateDeliveryService.png" class="img-fluid" hidden="true">
+          </a>
+
+          <a href="./My Portfolio_files/FDS-DeliveryDriverUpdateOrderStatus.png" data-toggle="lightbox" data-gallery="hidden-images2" data-title="Delivery Driver View Assigned Orders" data-footer="Delivery driver view their asignssed order and update the order status" class="col-4">
+            <img src="./My Portfolio_files/FDS-DeliveryDriverUpdateOrderStatus.png" class="img-fluid" hidden="true">
+          </a>
+          
+
+       
+                            </div>
+                         <div class="title py-4">
+                             <h4 class="title-text">Food Delivery Service (FDS)</h4>
+                             <span class="text-secondary">
+                              Database Systems
+                             </span>
+                             <div id="accordion2" class="accordion">
+                              <div class="card mb-0">
+                                  <div class="card-header collapsed" data-toggle="collapse" href="#collapseOne2">
+                                      <a class="card-title"> Descriptions </a>
+                                  </div>
+                                  <div id="collapseOne2" class="card-body collapse" data-parent="#accordion2">
+                                      <p>FDS is a ........</p>
+                                  </div>
+                              </div>
+                        
+                          <div class="card mb-0">
+                            <div class="card-header collapsed" data-toggle="collapse" href="#collapseTwo2">
+                                <a class="card-title"> Technology/Language Used </a>
+                            </div>
+                            <div id="collapseTwo2" class="card-body collapse" data-parent="#accordion2">
+                                <p>PostgreSQL, Laravel PHP, Boostrap 4, JavaScript</p>
+                            </div>
+                        </div>
+                        <div class="card mb-0">
+                          <div class="card-header collapsed" data-toggle="collapse" href="#collapseThree2">
+                              <a class="card-title">Functions/Features</a>
+                          </div>
+                          <div id="collapseThree2" class="card-body collapse" data-parent="#accordion2">
+                              <p>Login &amp; Register</p>
+                              <p>Browse Products</p>
+                          </div>
+                      </div>
+                      </div>
+
+                         </div>
+                        </div>
+                       </div>
+                       <!--Mobile App-->
+                       <div class="col-lg-4 col-md-6 col-sm-12 element-item mobile">
+                        <div class="our-project">
+                            <div class="img">
+                              <a href="https://youtu.be/0Nq8c38e8ho" data-toggle="lightbox" data-gallery="youtubevideos" class="col-sm-4" savefrom_lm_index="2" savefrom_lm="1">
+                                <img src="./My Portfolio_files/expenseTrackerHome.jpg" class="img-fluid">
+                            </a><span style="padding: 0; margin: 0; margin-left: 5px;"><a href="http://savefrom.net/?url=https%3A%2F%2Fyoutu.be%2F0Nq8c38e8ho&amp;utm_source=userjs-chrome&amp;utm_medium=extensions&amp;utm_campaign=link_modifier" target="_blank" title="Get a direct link" savefrom_lm="1" savefrom_lm_is_link="1" style="background-image: url(&quot;data:image/gif;base64,R0lGODlhEAAQAOZ3APf39+Xl5fT09OPj4/Hx8evr6/3+/u7u7uDh4OPi497e3t7e3/z8/P79/X3GbuXl5ubl5eHg4WzFUfb39+Pj4lzGOV7LOPz7+/n6+vn5+ZTLj9/e387Ozt7f3/7+/vv7/ISbePn5+m/JV1nRKXmVbkCnKVrSLDqsCuDh4d/e3uDn3/z7/H6TdVeaV1uSW+bn5v39/eXm5eXm5kyHP/f39pzGmVy7J3yRd9/f3mLEKkXCHJbka2TVM5vaZn6Wdfn6+YG/c/r5+ZO/jeLi41aHTIeageLn4f39/vr6+kzNG2PVM5i+lomdf2CXYKHVmtzo2YXNeDqsBebl5uHh4HDKWN3g3kKqEH6WeZHTXIPKdnSPbv79/pfmbE7PHpe1l4O8dTO5DODg4VDLIlKUUtzo2J7SmEWsLlG4NJbFjkrJHP7+/VK5Nfz8+zmnC3KKa+Hg4OHh4Y63j/3+/eDg4Ojo6P///8DAwP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAHcALAAAAAAQABAAAAfWgHd2g4SFhYJzdYqLjIpzgx5bBgYwHg1Hk2oNDXKDFwwfDF5NLmMtcStsn4MhGT8YS04aGmU1QRhIGYMTADQAQlAODlloAMYTgwICRmRfVBISIkBPKsqDBAREZmcVFhYVayUz2IMHB1dWOmImI2lgUVrmgwUFLzdtXTxKSSduMfSD6Aik48MGlx05SAykM0gKhAAPAhTB0oNFABkPHg5KMIBCxzlMQFQZMGBIggSDpsCJgGDOmzkIUCAIM2dOhEEcNijQuQDHgg4KOqRYwMGOIENIB90JBAA7&quot;); background-repeat: no-repeat; width: 16px; height: 16px; display: inline-block; border: none; text-decoration: none; padding: 0px; position: relative;"></a></span>
+
+          
+          
+
+       
+                            </div>
+                         <div class="title py-4">
+                             <h4 class="title-text">Expense Tracker App</h4>
+                            
+                             <span class="text-secondary">
+                            Hybrid Platform Mobile App
+                             </span>
+                            
+                             <div id="accordion5" class="accordion">
+                              <div class="card mb-0">
+                                  <div class="card-header collapsed" data-toggle="collapse" href="#collapseOne5">
+                                      <a class="card-title"> Descriptions </a>
+                                  </div>
+                                  <div id="collapseOne5" class="card-body collapse" data-parent="#accordion5">
+                                      <p>An Hybrid Platform mobile app </p>
+                                      <p><a href="https://hackaday.io/project/162180-expense-tracker-app/details">Project Details</a></p>
+                                  </div>
+                              </div>
+                        
+                          <div class="card mb-0">
+                            <div class="card-header collapsed" data-toggle="collapse" href="#collapseTwo5">
+                                <a class="card-title"> Technology/Language Used </a>
+                            </div>
+                            <div id="collapseTwo5" class="card-body collapse" data-parent="#accordion5">
+                                <p>Ionic 3, Node.js</p>
+                            </div>
+                        </div>
+                        <div class="card mb-0">
+                          <div class="card-header collapsed" data-toggle="collapse" href="#collapseThree5">
+                              <a class="card-title">Functions/Features</a>
+                          </div>
+                          <div id="collapseThree5" class="card-body collapse" data-parent="#accordion5">
+                              <p>Login &amp; Register</p>
+                              <p>Browse Products</p>
+                          </div>
+                      </div>
+                      </div>
+
+                         </div>
+                        </div>
+                       </div>
+                      
+
+
+
+
+
+
+                       <div class="col-lg-4 col-md-6 col-sm-12 element-item website">
+                        <div class="our-project">
+                            <div class="img">
+                              <a href="./My Portfolio_files/ACIWebPortal.png" data-toggle="lightbox" data-title="ACI Web Portal" data-gallery="hidden-images5" class="col-4">
+                                <img src="./My Portfolio_files/ACIWebPortal.png" class="img-fluid">
+                              </a>
+
+          
+
+          <a href="./My Portfolio_files/ACIWebPortal.png" data-toggle="lightbox" data-gallery="hidden-images5" data-title="Under Construction" data-footer="footer" class="col-4">
+            <img src="./My Portfolio_files/ACIWebPortal.png" class="img-fluid" hidden="true">
+          </a>
+          
+
+       
+                            </div>
+                         <div class="title py-4">
+                             <h4 class="title-text">ACI Web Portal</h4>
+                            
+                             <span class="text-secondary">
+                             Project from Asian Culinary Institude, work in NYP
+                             </span>
+                             <div id="accordion5" class="accordion">
+                              <div class="card mb-0">
+                                  <div class="card-header collapsed" data-toggle="collapse" href="#collapseOne5">
+                                      <a class="card-title"> Descriptions </a>
+                                  </div>
+                                  <div id="collapseOne5" class="card-body collapse" data-parent="#accordion5">
+                                      <p>NYP</p>
+                                  </div>
+                              </div>
+                        
+                          <div class="card mb-0">
+                            <div class="card-header collapsed" data-toggle="collapse" href="#collapseTwo5">
+                                <a class="card-title"> Technology/Language Used </a>
+                            </div>
+                            <div id="collapseTwo5" class="card-body collapse" data-parent="#accordion5">
+                                <p>PostgreSQL, Laravel PHP, Boostrap 4, JavaScript</p>
+                            </div>
+                        </div>
+                        <div class="card mb-0">
+                          <div class="card-header collapsed" data-toggle="collapse" href="#collapseThree5">
+                              <a class="card-title">Functions/Features</a>
+                          </div>
+                          <div id="collapseThree5" class="card-body collapse" data-parent="#accordion5">
+                              <p>Login &amp; Register</p>
+                              <p>Browse Products</p>
+                          </div>
+                      </div>
+                      </div>
+
+                         </div>
+                        </div>
+                       </div>
+
+
+
+                       <div class="col-lg-4 col-md-6 col-sm-12 element-item website">
+                        <div class="our-project">
+                            <div class="img">
+                              <a href="./My Portfolio_files/ITELMS-FeatureOverview.png" data-toggle="lightbox" data-title="Features Overview" data-gallery="hidden-images3" class="col-4">
+                                <img src="./My Portfolio_files/ITELMS-FeatureOverview.png" class="img-fluid">
+                              </a>
+
+          
+
+          <a href="./My Portfolio_files/ITELMS-FeatureOverview.png" data-toggle="lightbox" data-gallery="hidden-images3" data-title="Features Overview" class="col-4">
+            <img src="./My Portfolio_files/ITELMS-FeatureOverview.png" class="img-fluid" hidden="true">
+          </a>
+          
+
+       
+                            </div>
+                         <div class="title py-4">
+<div class="row">
+    <h4 class="title-text">IT Equipment Lifecycle Management System</h4>
+    
+                             <span class="text-secondary">
+                             Internship in ST Asset Managment
+                             </span>
+                             <div id="accordion3" class="accordion">
+                              <div class="card mb-0">
+                                  <div class="card-header collapsed" data-toggle="collapse" href="#collapseOne3">
+                                      <a class="card-title"> Descriptions </a>
+                                  </div>
+                                  <div id="collapseOne3" class="card-body collapse" data-parent="#accordion3">
+                                      <p>NYP</p>
+                                  </div>
+                              </div>
+                        
+                          <div class="card mb-0">
+                            <div class="card-header collapsed" data-toggle="collapse" href="#collapseTwo3">
+                                <a class="card-title"> Technology/Language Used </a>
+                            </div>
+                            <div id="collapseTwo3" class="card-body collapse" data-parent="#accordion3">
+                                <p>PostgreSQL, Laravel PHP, Boostrap 4, JavaScript</p>
+                            </div>
+                        </div>
+                        <div class="card mb-0">
+                          <div class="card-header collapsed" data-toggle="collapse" href="#collapseThree3">
+                              <a class="card-title">Functions/Features</a>
+                          </div>
+                          <div id="collapseThree3" class="card-body collapse" data-parent="#accordion3">
+                              <p>Login &amp; Register</p>
+                              <p>Browse Products</p>
+                          </div>
+                      </div>
+                      </div>
+
+                         </div></div>
+                        </div>
+                       </div>
+
+                      
+
+                       <div class="col-lg-4 col-md-6 col-sm-12 element-item website">
+                        <div class="our-project">
+                            <div class="img">
+                              <a href="./My Portfolio_files/DataMigration-workflow.png" data-toggle="lightbox" data-title="Data Migration Workflow" data-footer="" data-gallery="hidden-images4" class="col-4">
+                                <img src="./My Portfolio_files/DataMigration-workflow.png" class="img-fluid">
+                              </a>
+
+          
+
+          <a href="./My Portfolio_files/DataMigration-Home.png" data-toggle="lightbox" data-gallery="hidden-images4" data-title="Data Migration - Generate Template" data-footer="User select tables that they want to fill in the data and system will check for related tables and generate the template for user to download" class="col-4">
+            <img src="./My Portfolio_files/DataMigration-Home.png" class="img-fluid" hidden="true">
+          </a>
+          <a href="./My Portfolio_files/DataMigration-SampleTemplate.png" data-toggle="lightbox" data-gallery="hidden-images4" data-title="Data Migration - Template Sample" data-footer="Instruction sheet that provides instruction for user to fill in the data correctly" class="col-4">
+            <img src="./My Portfolio_files/DataMigration-SampleTemplate.png" class="img-fluid" hidden="true">
+          </a>
+          <a href="./My Portfolio_files/DataMigration-SampleTemplate2.png" data-toggle="lightbox" data-gallery="hidden-images4" data-title="Data Migration - Template Sample 2" data-footer="Template Sample for fill in data for the select table and it&#39;s related table(s)" class="col-4">
+            <img src="./My Portfolio_files/DataMigration-SampleTemplate2.png" class="img-fluid" hidden="true">
+          </a>
+          <a href="./My Portfolio_files/DataMigration-uploadData.png" data-toggle="lightbox" data-gallery="hidden-images4" data-title="Data Migration - Upload Data" data-footer="User select the table that they want to upload data with and upload the excel file" class="col-4">
+            <img src="./My Portfolio_files/DataMigration-uploadData.png" class="img-fluid" hidden="true">
+          </a>
+          <a href="./My Portfolio_files/DataMigration-Validations.png" data-toggle="lightbox" data-gallery="hidden-images4" data-title="Data Migration - Data Validations" data-footer="System validate the data in the excel file and show message(s)" class="col-4">
+            <img src="./My Portfolio_files/DataMigration-Validations.png" class="img-fluid" hidden="true">
+          </a>
+          <a href="./My Portfolio_files/DataMigration-uploadedSuccessed.png" data-toggle="lightbox" data-gallery="hidden-images4" data-title="Data Migration - Uploaded Sucessfully" data-footer="Data uploaded successfully and display sucess message" class="col-4">
+            <img src="./My Portfolio_files/DataMigration-uploadedSuccessed.png" class="img-fluid" hidden="true">
+          </a>
+          
+          <a href="./My Portfolio_files/DataMigration-ContainsExistRecord.png" data-toggle="lightbox" data-gallery="hidden-images4" data-title="Data Migration - Contains Existing Record" data-footer="The data is already exist and prompt if want to overwrite the record" class="col-4">
+            <img src="./My Portfolio_files/DataMigration-ContainsExistRecord.png" class="img-fluid" hidden="true">
+          </a>
+          <a href="./My Portfolio_files/DataMigration-uploadFailMessage.png" data-toggle="lightbox" data-gallery="hidden-images4" data-title="Data Migration - Upload Failed" data-footer="Data failed to upload and display error message" class="col-4">
+            <img src="./My Portfolio_files/DataMigration-uploadFailMessage.png" class="img-fluid" hidden="true">
+          </a>
+          
+
+       
+                            </div>
+                         <div class="title py-4">
+                             <h4 class="title-text">ACI - Trainee Management System
+            (TMS)</h4>
+                             
+                             <span class="text-secondary">
+                             FYP in Nanyang Polytechnic (Industry Project)
+                             </span>
+                             <div id="accordion4" class="accordion">
+                              <div class="card mb-0">
+                                  <div class="card-header collapsed" data-toggle="collapse" href="#collapseOne4">
+                                      <a class="card-title"> Descriptions </a>
+                                  </div>
+                                  <div id="collapseOne4" class="card-body collapse" data-parent="#accordion4">
+                                      <p>NYP</p>
+                                  </div>
+                              </div>
+                        
+                          <div class="card mb-0">
+                            <div class="card-header collapsed" data-toggle="collapse" href="#collapseTwo4">
+                                <a class="card-title"> Technology/Language Used </a>
+                            </div>
+                            <div id="collapseTwo4" class="card-body collapse" data-parent="#accordion4">
+                                <p>Asp.Net C#, SQL Server Management Studio, Visual Studio
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card mb-0">
+                          <div class="card-header collapsed" data-toggle="collapse" href="#collapseThree4">
+                              <a class="card-title">Functions/Features</a>
+                          </div>
+                          <div id="collapseThree4" class="card-body collapse" data-parent="#accordion4">
+                              <p>Login &amp; Register</p>
+                              <p>Browse Products</p>
+                          </div>
+                      </div>
+                      </div>
+
+                         </div>
+                        </div>
+                       </div>
+                   </div>
+               </div>
+
+               
+
+
+               
+               
+
+               
+           </section>
+
+
+       
+
+           <!--End Project-->
+    </main>
+    <!-- End Main-->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="">
+                <div class="site-logo text-center py-4">
+              
+                </div>
+                <div class="social text-center">
+                    <h5 class="text-uppercase">Follow me</h5>
+                    <a href="https://www.facebook.com/lili.lin.224"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/lili__2319/?hl=en"><i class="fab fa-instagram"></i></a>
+                
+                </div>
+     
+            </div>
+        </div>
+    </footer>
+
+    <!--Jquery js file-->
+    <script src="./My Portfolio_files/jquery-3.5.1.min.js"></script>
+    <!--Bootstrap js file-->
+<script src="./My Portfolio_files/bootstrap.min.js"></script>
+<!-- isotope js library-->
+<script src="./My Portfolio_files/isotope.min.js"></script>
+<!--ekko-lightbox-->
+<script src="./My Portfolio_files/ekko-lightbox.min.js"></script>
+
+<!-- Magnific popup script file-->
+<script src="./My Portfolio_files/jquery.magnific-popup.min.js"></script>
+<!-- custom js file -->
+<script src="./My Portfolio_files/main.js"></script>
+
+
+</body></html>
