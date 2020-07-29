@@ -98,3 +98,7 @@ button:hover
 .ekko-lightbox-nav-overlay a{
     color:black;
 }
+.body{
+    max-width: 500px;
+    margin: auto;
+}
