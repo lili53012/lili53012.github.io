@@ -1,3 +1,3 @@
 # lili53012.github.io
 
-Personal Website for my portfolio
+Website for my portfolio
